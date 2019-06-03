@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from .models import *
 
 def Index(request):
-	return HttpResponse("Hola")
+	pass
 
 def ListUsuarios(request):
 	users = User.objects.all()

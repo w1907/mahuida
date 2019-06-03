@@ -16,3 +16,9 @@
 
 - Se modifico el archivo settings.py del proyecto.
 - Se modifico el archivo urls.py del proyecto.
+
+# Version 0.1.2 03/06/2019
+
+**Modificado**
+
+- Se modificaron las templates de la aplicación mantenedor.

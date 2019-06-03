@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Eliminar usuario</title>
-</head>
-<body>
+{% extends 'core/base.html' %}
+{% block content %}
 	<h2>Usuario {{profile.user.username}} de nombre {{profile.user.first_name}}</h2>
 	<form method="post">
 		{% csrf_token %}
 		<p>¿Estás seguro de eliminar a este usuario?</p>
 		<input type="submit" value="Eliminar">
 	</form>
-</body>
-</html>
+{% endblock %}
