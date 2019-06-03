@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listar usuarios</title>
+</head>
+<body>
+	<a href="{% url 'add_user' %}">Agregar usuario</a>
+	<ul>
+		{% for profile in profiles %}
+		<li>{{profile.id}} - {{profile.user.username}} - {{profile.user.first_name}} <a href="{% url 'edit_user' profile.id %}">Editar</a> - <a href="{% url 'delete_user' profile.id %}">Eliminar</a></li>
+		{% endfor %}
+	</ul>
+</body>
+</html>
